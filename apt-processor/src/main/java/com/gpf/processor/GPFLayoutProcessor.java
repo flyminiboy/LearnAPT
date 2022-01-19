@@ -72,7 +72,7 @@ public class GPFLayoutProcessor extends AbstractProcessor {
             String newClassName = e.getSimpleName() + "_ViewBindLayout";
 
             StringBuilder builder = new StringBuilder()
-                    .append("package com.gpf.processor.auto;\n\n")
+                    .append("package com.gpf.learnapt;\n\n")
                     .append("public class ")
                     .append(newClassName)
                     .append(" {\n\n") // open class

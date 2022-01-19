@@ -10,3 +10,4 @@ rootProject.name = "LearnAPT"
 include ':app'
 include ':apt-annotation'
 include ':apt-processor'
+include ':apt-sdk'
