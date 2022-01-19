@@ -110,19 +110,24 @@ public class GPFLayoutProcessor extends AbstractProcessor {
 
 //            StringBuilder builder = new StringBuilder()
 //                    .append("package com.gpf.learnapt;\n\n")
+//                    .append("import android.app.Activity;\n\n")
 //                    .append("public class ")
 //                    .append(newClassName)
 //                    .append(" {\n\n") // open class
-//                    .append("\tpublic void setContentView() {\n"); // open method
+//                    .append("\tpublic void setContentView(Activity activity) {\n"); // open method
 //
-//            // TODO 具体的方法实现 方法内部调用 activity.setContentView(bindLayout.value())
 //            // setContentView 需要一个参数 activity
+//            // 方法内部调用 activity.setContentView(bindLayout.value())
+//
+//            builder.append("activity.setContentView(")
+//                    .append(bindLayout.value())
+//                    .append(");\n\n");
 //
 //            builder.append("\t}\n") // close method
 //                    .append("} \n"); // end class
 //
 //            try { // write the file
-//                JavaFileObject source = filer.createSourceFile("com.gpf.processor.auto." + newClassName);
+//                JavaFileObject source = filer.createSourceFile("com.gpf.learnapt." + newClassName);
 //                Writer writer = source.openWriter();
 //                writer.write(builder.toString());
 //                writer.flush();
